@@ -1,5 +1,6 @@
 SPACE = " "
 
+
 def replace_spaces(string):
     """Given a string, replace all of the spaces with "%20".
 
@@ -13,3 +14,7 @@ def replace_spaces(string):
         else:
             new_string += char
     return new_string
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
