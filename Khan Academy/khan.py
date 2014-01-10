@@ -58,7 +58,7 @@ def strcspn(input, delimiters):
 
     delims = set(delimiters)
 
-    for idx, char in enumerate(input):   # for char, idx in enumerate(input):
+    for idx, char in enumerate(input):
         if char in delims:
             return idx
     return len(input)
