@@ -56,16 +56,12 @@ def strcspn(input, delimiters):
     7
     """
 
-    delims = set()   # delims = set(delimiters)
-    for char in delimiters:
-        delims.add(char)
+    delims = set(delimiters)
 
-    counter = 0
-    for char in input:   # for char, idx in enumerate(input):
+    for idx, char in enumerate(input):   # for char, idx in enumerate(input):
         if char in delims:
-            return counter
-        counter += 1
-    return counter
+            return idx
+    return len(input)
 
 if __name__ == "__main__":
     import doctest
