@@ -1,5 +1,6 @@
 # Implement an algorithm to determine if a string has all unique characters.
 
+
 def unique(string):
     """Return True if string is completely unique. Return False otherwise.
 
