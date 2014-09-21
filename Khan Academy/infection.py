@@ -10,7 +10,11 @@ class User:
 
     version = "0.0"
     total_users = 0
-    def __init__(self, version=None, students=[], teachers=[]):
+    def __init__(self, version=None, students=None, teachers=None):
+        if students is None:
+            students = []
+        if teachers is None:
+            teachers = []
         self.students = set()
         self.teachers = set()
         self.uid = 1000 + User.total_users
